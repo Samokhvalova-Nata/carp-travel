@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Inter, Karantina } from 'next/font/google';
 import './globals.css';
 
 const baseUrl = process.env.VERCEL_URL as string;
@@ -41,13 +42,26 @@ export const metadata: Metadata = {
   },
 };
 
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+});
+
+const karantina = Karantina({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-karantina',
+  weight: '400',
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${karantina.variable}`}>
       <body>{children}</body>
     </html>
   );
