@@ -2,7 +2,7 @@ import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
-  blocklist: ['container'],
+  // blocklist: ['container'],
   theme: {
     colors: {
       transparent: 'transparent',
