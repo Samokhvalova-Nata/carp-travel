@@ -1,0 +1,48 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-checked" viewBox="0 0 32 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.3333" d="M0.667 0.667h30.667v30.667h-30.667z"></path>
+<path d="M5.333 5.333h21.333v21.333h-21.333z"></path>
+</symbol>
+<symbol id="icon-dot" viewBox="0 0 32 32">
+<path d="M15.083 0l15.086 15.086-15.086 15.083-15.083-15.083z"></path>
+</symbol>
+<symbol id="icon-error-cross" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="0.8889" d="M7.778 7.778l16.444 16.444M24.222 7.778l-16.444 16.444"></path>
+</symbol>
+<symbol id="icon-frame-left-desktop" viewBox="0 0 20 32">
+<path d="M0 0h0.451v4.958h-0.451z"></path>
+<path d="M0 0h19.831v0.451h-19.831zM0 32h0.451v-4.958h-0.451z"></path>
+<path d="M0 32h19.831v-0.451h-19.831z"></path>
+</symbol>
+<symbol id="icon-frame-left-mobile" viewBox="0 0 25 32">
+<path d="M0 0h0.577v6.641h-0.577z"></path>
+<path d="M0 0h25.358v0.604h-25.358zM0 32h0.577v-6.642h-0.577z"></path>
+<path d="M0 32h25.358v-0.604h-25.358z"></path>
+</symbol>
+<symbol id="icon-frame-left-tablet" viewBox="0 0 22 32">
+<path d="M0 0h0.509v7.040h-0.509z"></path>
+<path d="M0 0h22.4v0.64h-22.4zM0 32h0.509v-7.040h-0.509z"></path>
+<path d="M0 32h22.4v-0.64h-22.4z"></path>
+</symbol>
+<symbol id="icon-frame-right-desktop" viewBox="0 0 20 32">
+<path d="M19.831 0h-0.451v4.958h0.451z"></path>
+<path d="M19.831 0h-19.831v0.451h19.831zM19.831 32h-0.451v-4.958h0.451z"></path>
+<path d="M19.831 32h-19.831v-0.451h19.831z"></path>
+</symbol>
+<symbol id="icon-frame-right-mobile" viewBox="0 0 25 32">
+<path d="M25.358 0h-0.577v6.641h0.577z"></path>
+<path d="M25.358 0h-25.358v0.604h25.358zM25.358 32h-0.577v-6.642h0.577z"></path>
+<path d="M25.358 32h-25.358v-0.604h25.358z"></path>
+</symbol>
+<symbol id="icon-frame-right-tablet" viewBox="0 0 22 32">
+<path d="M22.4 0h-0.509v7.040h0.509z"></path>
+<path d="M22.4 0h-22.4v0.64h22.4zM22.4 32h-0.509v-7.040h0.509z"></path>
+<path d="M22.4 32h-22.4v-0.64h22.4z"></path>
+</symbol>
+<symbol id="icon-unchecked" viewBox="0 0 32 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.3333" d="M0.667 0.667h30.667v30.667h-30.667z"></path>
+<path d="M5.333 5.333h21.333v21.333h-21.333z"></path>
+</symbol>
+</defs>
+</svg>
