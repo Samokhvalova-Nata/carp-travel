@@ -34,12 +34,21 @@ const config: Config = {
       screens: {
         xs: { min: '320px', max: '479px' },
         sm: { min: '480px', max: '767px' },
-        md: { min: '768px', max: '1279px' },
+        md: { min: '768px' },
         lg: { min: '1280px' },
+      },
+      fontSize: {
+        '12': '12px',
+        '14': '14px',
+        '16': '16px',
+        '18': '18px',
+      },
+      letterSpacing: {
+        wide: '2.59px',
       },
     },
   },
   plugins: [],
-  prefix: 'tw-',
+  // prefix: 'tw-',
 };
 export default config;
