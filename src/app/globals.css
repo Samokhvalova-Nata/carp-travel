@@ -38,6 +38,7 @@
 body {
   font-family: var(--font-inter);
   font-weight: 200;
+  font-size: 14px;
   background-color: var(--default-bgd);
   color: var(--main-color);
   min-height: 100vh;

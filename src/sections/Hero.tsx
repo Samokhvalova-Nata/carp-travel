@@ -1,13 +1,17 @@
-import { Header } from '@/components/Header/Header';
+
+import Header from "@/components/Header/Header";
+import HeroContent from "@/components/Hero/HeroContent";
 
 
-export const Hero = () => {
+const Hero = () => {
   return (
-    <section className='pt-9 md:pt-[25px] lg:pt-6'>
+    <section className=''>
       <div className='container'>
         <Header />
+        <HeroContent/>
       </div>
-      
     </section>
   );
 };
+
+export default Hero;
