@@ -93,8 +93,8 @@ a {
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 104px;
+    padding-right: 104px;
   }
 }
 
@@ -154,7 +154,6 @@ a {
   background-position: center;
 
   @media screen and (min-width: 480px) {
-    /* max-width: 480px; */
     background-image: image-set(
     url("/images/hero/hero-tablet-1x.png") 1x,
     url("/images/hero/hero-tablet-2x.png") 2x
@@ -162,7 +161,6 @@ a {
   }
 
   @media screen and (min-width: 768px) {
-    /* max-width: 768px; */
     background-image: image-set(
     url("/images/hero/hero-desktop-1x.png") 1x,
     url("/images/hero/hero-desktop-2x.png") 2x
@@ -170,13 +168,43 @@ a {
   }
 
   @media screen and (min-width: 1280px) {
-    /* max-width: 1440px; */
+    max-width: 1600px;
   }
 }
 
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+.about {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: image-set(
+    url("/images/about/about-mobile-1x.png") 1x,
+    url("/images/about/about-mobile-2x.png") 2x
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (min-width: 768px) {
+    background-image: image-set(
+    url("/images/about/about-tablet-1x.png") 1x,
+    url("/images/about/about-tablet-2x.png") 2x
+    );
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1600px;
+    background-image: image-set(
+    url("/images/about/about-desktop-1x.png") 1x,
+    url("/images/about/about-desktop-2x.png") 2x
+    );
+  }
+}
+
+
+@layer utilities {
+  .section {
+    @apply py-[56px] md:py-[64px] lg:py-[104px]
+  }
 }
 

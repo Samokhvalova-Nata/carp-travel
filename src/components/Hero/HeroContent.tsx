@@ -14,7 +14,7 @@ const HeroContent = () => {
   
 
   return (
-    <div className='flex flex-col md:flex-row gap-6 md:gap-0 md:justify-between pb-[56px] md:pb-[64px] lg:py-[24px]'>
+    <div className='flex flex-col md:flex-row gap-6 md:gap-0 md:justify-between'>
 
       <div className='md:hidden text-right'>
         <Slogan />

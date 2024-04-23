@@ -19,7 +19,7 @@ const Header = () => {
   };
 
   return (
-    <header className="relative flex items-center justify-between pt-9 pb-9 md:pt-[25px] md:pb-[66px] lg:pt-6 lg:pb-12">
+    <header className="flex items-center justify-between pt-9 pb-9 md:pt-[25px] md:pb-[66px] lg:pt-[24px] lg:pb-[72px]">
       <Logo />
       {isMobile ? (
         <>
