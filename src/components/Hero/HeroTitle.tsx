@@ -5,7 +5,7 @@ const HeroTitle = () => {
   return (
     <div className="max-w-full sm:max-w-[426px] lg:max-w-[646px]">
       <h1
-        className="tracking-1.6 md:tracking-2.68 lg:tracking-3.92 flex flex-col text-[40px] font-thin uppercase leading-[1.4] md:text-[67px] md:leading-normal lg:text-[98px]"
+        className="flex flex-col font-thin uppercase text-[40px] md:text-[67px] lg:text-[98px] tracking-1.6 md:tracking-2.68 lg:tracking-3.92 leading-[1.4] "
       >
         <span className="font-medium">{data.title1}</span>
         {data.title2}

@@ -20,7 +20,7 @@ const Header = () => {
   };
 
   return (
-    <header className="flex items-center justify-between pt-9 pb-9 md:pt-[25px] md:pb-[66px] lg:pt-6 lg:pb-12">
+    <header className="z-10 flex items-center justify-between pt-9 pb-9 md:pt-[25px] md:pb-[66px] lg:pt-6 lg:pb-12">
       <Logo />
       {isMobile ? (
         <MenuButton text="Menu" onClick={toggleMenuOpen}/>

@@ -11,9 +11,6 @@ const config: Config = {
       error: '#ff5757',
     },
     backgroundColor: {
-      sectionBgd50: 'rgba(2, 15, 8, 0.5)',
-      sectionBgd75: 'rgba(2, 15, 8, 0.75)',
-      sectionBgd85: 'rgba(2, 15, 8, 0.85)',
       btnBgdLight: 'rgba(255, 255, 255, 0.1)',
       btnBgd: 'rgba(255, 255, 255, 0.05)',
       btnBgdHover: 'rgba(255, 255, 255, 0.2)',
@@ -47,7 +44,7 @@ const config: Config = {
       letterSpacing: {
         wide: '2.59px',
         normal: '1.4px',
-        '3.9': '-3.92px',
+        '3.92': '-3.92px',
         '1.26': '1.26px',
         '1.44': '1.44px',
         '1.6': ' -1.6px',

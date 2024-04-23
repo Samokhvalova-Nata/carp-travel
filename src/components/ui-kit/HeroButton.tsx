@@ -9,7 +9,7 @@ const HeroButton = ({ text, children}: HeroButtonProps) => {
   return (
     <button
       type="button"
-      className="uppercase focus:outline-1 focus:outline-white bg-btnBgdLight md:bg-btnBgd h-[53px] lg:h-[71px] text-lg lg:text-[32px] font-bold leading-[2.66] md:leading-normal relative hover:bg-btnBgdHover focus:bg-btnBgdHover"
+      className="btn w-full uppercase focus:outline-1 focus:outline-white bg-btnBgdLight md:bg-btnBgd h-[53px] lg:h-[71px] text-lg lg:text-[32px] font-bold leading-[2.66] md:leading-normal relative hover:bg-btnBgdHover focus:bg-btnBgdHover transition-all duration-250"
     >{children}
       {text}
     </button>
