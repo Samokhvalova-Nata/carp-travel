@@ -14,8 +14,10 @@ const Header = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   const toggleMenuOpen = () => {
-    setIsOpened(prev => !prev);
-    document.body.style.overflow = isOpened ? 'auto' : 'hidden';
+    if(isMobile) {
+      setIsOpened(prev => !prev);
+      document.body.style.overflow = isOpened ? 'auto' : 'hidden';
+    } return;
   };
 
   return (

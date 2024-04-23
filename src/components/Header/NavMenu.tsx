@@ -1,9 +1,17 @@
 'use client';
 
+import { useMediaQuery } from 'react-responsive';
 import { Link } from 'react-scroll';
+
 import elements from '../../data/header.json';
 
-const NavMenu = () => {
+export interface NavMenuProps {
+  onClick?: () => void;
+  isOpened?: boolean;
+}
+
+const NavMenu = ({onClick}:NavMenuProps) => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
 
   return (
     <nav>
@@ -18,6 +26,7 @@ const NavMenu = () => {
               smooth={true}
               duration={500}
               className="focus:outline-1 focus:outline-white"
+              onClick={onClick} 
             >
               {children}
             </Link>
