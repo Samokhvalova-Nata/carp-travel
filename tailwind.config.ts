@@ -55,6 +55,9 @@ const config: Config = {
         '25.9': '25.9px',
         '36.48': '36.48px',
       },
+      backdropBlur: {
+        '25': '25px'
+      },
     },
   },
   plugins: [],

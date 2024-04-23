@@ -11,7 +11,7 @@ const NavMenu = () => {
         {elements.map(({ to, children }) => (
           <li
             key={to}
-            className="text-18 md:text-14 font-normal tracking-[1.8px] focus:outline-1 md:tracking-[1.4px]"
+            className="text-18 md:text-14 font-normal tracking-[1.8px] md:tracking-[1.4px] hover:underline focus:underline focus:outline-1 transition-all duration-300"
           >
             <Link
               to={to}

@@ -154,7 +154,7 @@ a {
   background-position: center;
 
   @media screen and (min-width: 480px) {
-    max-width: 480px;
+    /* max-width: 480px; */
     background-image: image-set(
     url("/images/hero/hero-tablet-1x.png") 1x,
     url("/images/hero/hero-tablet-2x.png") 2x
@@ -162,7 +162,7 @@ a {
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 768px;
+    /* max-width: 768px; */
     background-image: image-set(
     url("/images/hero/hero-desktop-1x.png") 1x,
     url("/images/hero/hero-desktop-2x.png") 2x
@@ -170,7 +170,13 @@ a {
   }
 
   @media screen and (min-width: 1280px) {
-    max-width: 1440px;
+    /* max-width: 1440px; */
   }
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 

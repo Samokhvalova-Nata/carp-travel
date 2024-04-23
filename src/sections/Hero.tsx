@@ -6,9 +6,7 @@ import HeroContent from "@/components/Hero/HeroContent";
 const Hero = () => {
   return (
     <section className='w-full h-full hero'>
-      <div className="section-overlay-top"></div>
       <div className='container lg:pb-[80px]'>
-        
         <Header />
         <HeroContent/>
       </div>

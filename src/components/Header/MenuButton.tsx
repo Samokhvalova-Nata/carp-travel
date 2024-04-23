@@ -8,7 +8,7 @@ const MenuButton = ({ text, onClick }: MenuButtonProps) => {
     <button
       type="button"
       onClick={onClick}
-      className="font-normal uppercase tracking-normal text-white hover:underline focus:underline focus:outline-1 focus:outline-white transition-all duration-250"
+      className="font-normal uppercase tracking-normal text-white hover:underline focus:underline focus:outline-1 focus:outline-white transition-all duration-300"
     >
       {text}
     </button>
