@@ -1,13 +1,11 @@
 export interface ParagrathProps {
-  text1: string;
-  text2: string;
+  text: string;
 }
 
-const Paragrath = ({text1, text2}: ParagrathProps) => {
+const Paragrath = ({text}: ParagrathProps) => {
   return (
-      <p className="md:text-16 lg:text-18 leading-[1.42] md:leading-[1.25] lg:leading-[1.33]">
-        <strong>{text1}</strong>
-        {text2}
+      <p className="md:text-13 lg:text-18 leading-[1.42] md:leading-[1.53] lg:leading-[1.33] md:text-justify">
+        {text}
       </p>
   );
 };

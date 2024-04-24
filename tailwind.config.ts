@@ -9,14 +9,17 @@ const config: Config = {
       current: 'currentColor',
       white: '#ffffff',
       error: '#ff5757',
+      activeIdx: 'rgba(255, 255, 255, 0.20)',
     },
     backgroundColor: {
+      white: '#ffffff',
       btnBgdLight: 'rgba(255, 255, 255, 0.1)',
       btnBgd: 'rgba(255, 255, 255, 0.05)',
       btnBgdHover: 'rgba(255, 255, 255, 0.2)',
       inputBgd: 'rgba(255, 255, 255, 0.05)',
       inputBgdFilled: 'rgba(255, 255, 255, 0.1)',
       burgerBgd: 'rgba(1, 10, 5, 0.75)',
+
     },
     backgroundImage: {
       gradSectionTop:
@@ -37,9 +40,13 @@ const config: Config = {
       },
       fontSize: {
         '12': '12px',
+        '13': '13px',
         '14': '14px',
         '16': '16px',
         '18': '18px',
+        '20': '20px',
+        '22': '22px',
+        '28': '28px',
       },
       letterSpacing: {
         wide: '2.59px',
@@ -51,6 +58,7 @@ const config: Config = {
         '1.44': '1.44px',
         '1.6': '-1.6px',
         '2.16': '2.16px',
+        '2.4': '2.4px',
         '2.68': '-2.68px',
         '1.665': '1.665px',
         '8.71': '8.71px',

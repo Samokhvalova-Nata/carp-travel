@@ -173,17 +173,10 @@ a {
 }
 
 .about {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-
   background-image: image-set(
     url("/images/about/about-mobile-1x.png") 1x,
     url("/images/about/about-mobile-2x.png") 2x
   );
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 
   @media screen and (min-width: 768px) {
     background-image: image-set(
@@ -193,7 +186,6 @@ a {
   }
 
   @media screen and (min-width: 1280px) {
-    max-width: 1600px;
     background-image: image-set(
     url("/images/about/about-desktop-1x.png") 1x,
     url("/images/about/about-desktop-2x.png") 2x
@@ -201,10 +193,14 @@ a {
   }
 }
 
+/* .sliderNav {
+  text-box-trim: both;
+  text-box-edge: cap alphabetic;
+} */
 
 @layer utilities {
   .section {
-    @apply py-[56px] md:py-[64px] lg:py-[104px]
+    @apply py-[56px] md:py-[64px] lg:py-[104px] max-w-full lg:max-w-[1600px] ml-auto mr-auto bg-no-repeat bg-cover bg-center
   }
 }
 
