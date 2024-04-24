@@ -1,16 +1,17 @@
 import Paragrath from '@/components/ui-kit/Paragrath';
 import Title from '@/components/ui-kit/Title';
+import title from '@/data/titles.json';
 import data from '@/data/about.json';
 
 
 const About = () => {
   return (
-    <section id="about" className='about section '>
+    <section id="about" className='about section'>
       <div className='container'>
         <div className='flex flex-col md:gap-[64px] lg:gap-[72px] '>
 
         <div className='md:flex md:gap-[76px] lg:gap-[24px] md:items-start'>
-          <Title text1={data.title1} text2={data.title2}/>
+          <Title text1={title.about1} text2={title.about2}/>
           <div className='flex flex-col gap-[20px] md:gap-[16px] lg:gap-[24px] w-[180px] md:w-[221px] lg:w-[292px] pt-[8px] md:pt-[16px] lg:pt-[25px]'>
             <Paragrath text1={data.strong1} text2={data.description1}/>
             <Paragrath text1={data.strong2} text2={data.description2}/>

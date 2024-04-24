@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '@/data/hero.json';
+import data from '@/data/titles.json';
 
 const HeroTitle = () => {
   return (
@@ -7,8 +7,8 @@ const HeroTitle = () => {
       <h1
         className="flex flex-col font-thin uppercase text-[40px] md:text-[67px] lg:text-[98px] tracking-1.6 md:tracking-2.68 lg:tracking-3.92 leading-[1.4] "
       >
-        <span className="font-medium">{data.title1}</span>
-        {data.title2}
+        <span className="font-medium">{data.hero1}</span>
+        {data.hero2}
       </h1>
     </div>
   );
