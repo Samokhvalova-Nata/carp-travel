@@ -1,4 +1,5 @@
 import About from "@/sections/About";
+import Career from "@/sections/Career";
 import Hero from "@/sections/Hero";
 import Services from "@/sections/Services";
 
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero/>
       <About/>
       <Services/>
+      <Career/>
     </main>
   );
 }
