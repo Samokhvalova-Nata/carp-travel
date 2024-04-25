@@ -29,7 +29,7 @@ export const features = {
 
 export const formData: IFormData = {
   description: "Don't miss your opportunity! Fill out the form right now and join our team!",
-  form: {
+  forma: {
     inputs: [
       {
         id: "career-name",
@@ -79,13 +79,14 @@ export const formData: IFormData = {
       }
     ],
     textarea: {
+      id: "career-message",
       name: "message",
       field: "message",
-      required: false,
       label: "Message",
       ariaLabel: "Message textarea"
     },
     check: {
+      id: "career-policy",
       name: "policy",
       field: "policy",
       type: "checkbox",

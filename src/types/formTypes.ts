@@ -3,6 +3,14 @@ import { FieldErrors, UseFormRegister, ValidationRule } from "react-hook-form";
 
 type InputType = "text" | "email" | "tel";
 
+export interface FormFields {
+  name: string;
+  email: string;
+  position?: string;
+  phone?: string;
+  message: string;
+  policy?: boolean;
+};
 
 export type fieldsOptions =
   | "name"
@@ -26,16 +34,18 @@ export interface IInput {
 }
 
 export interface ITextarea {
+  id: string;
   name: string;
-  field: string;
-  required: boolean;
   label: string;
   ariaLabel: string;
+  field: fieldsOptions;
+
 }
 
 export interface ICheck {
+  id: string;
   name: string;
-  field: string;
+  field: fieldsOptions;
   type: string;
   required: boolean;
   error: string;
@@ -45,11 +55,21 @@ export interface ICheck {
 
 export interface IFormData {
   description: string;
-  form: {
+  forma: {
     inputs: IInput[];
-    textarea?: ITextarea;
+    textarea: ITextarea;
     check: ICheck;
   };
+}
+
+export interface TextAreaProps {
+  textArea: ITextarea;
+  register: UseFormRegister<FormFields>;
+}
+
+export interface CheckProps {
+  check: ICheck;
+  register: UseFormRegister<FormFields>;
 }
 
 

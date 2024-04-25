@@ -50,8 +50,6 @@ const config: Config = {
         '28': '28px',
         '30': '30px',
         '36': '36px',
-
-
       },
       letterSpacing: {
         wide: '2.59px',
