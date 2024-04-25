@@ -193,14 +193,28 @@ a {
   }
 }
 
-/* .sliderNav {
-  text-box-trim: both;
-  text-box-edge: cap alphabetic;
-} */
+@media screen and (min-width: 768px) {
+  .services-slider .swiper-wrapper {
+    width: 463px !important;
+  }
+
+  .services-slider.swiper {
+    margin: 0 !important;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .services-slider .swiper-wrapper {
+    width: 607px !important;
+  }
+
+}
 
 @layer utilities {
   .section {
     @apply py-[56px] md:py-[64px] lg:py-[104px] max-w-full lg:max-w-[1600px] ml-auto mr-auto bg-no-repeat bg-cover bg-center
   }
 }
+
+
 

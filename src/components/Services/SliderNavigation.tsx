@@ -1,12 +1,6 @@
 import React, { FC } from 'react';
+import {navigationList} from '../../data/services';
 
-const navigationList: string[] = [
-  'ATVs Traveling',
-  'Rock climbing',
-  'Hot air ballooning',
-  'Skydiving',
-  'Rafting',
-];
 
 export interface SliderNavigationProps {
   activeIndex: number;
@@ -15,24 +9,21 @@ export interface SliderNavigationProps {
 
 const SliderNavigation: FC<SliderNavigationProps> = ({activeIndex = 0, handleNavigationClick}) => {     
   return (
-    <ul className='flex flex-col gap-[16px] lg:gap-[24px] mt-[24px] md:mt-0'>
+    <ul className='flex flex-col pt-[24px] md:pt-0 gap-[16px] lg:gap-[24px]'>
       {navigationList.map((el, index) => (
-        <li 
-          key={el} 
-          className={`flex items-center gap-[8px] text-20 md:text-22 lg:text-28 leading-[0.85] md:leading-[0.82] lg:leading-[0.86]
+        <li key={el} className='flex gap-[8px] items-center'>
+          {(activeIndex === index) && <div className='w-[6px] h-[6px] bg-white rotate-45'></div>}
+          <button type='button' 
+          className={`uppercase text-left gap-[8px] text-20 md:text-22 lg:text-28 leading-[0.85] md:leading-[0.82] lg:leading-[0.86] md:w-[186px] xl:w-[236px]
           ${(activeIndex === index) ?
           'opacity-100 font-medium'
-          : 'opacity-50 hover:opacity-100 focus:opacity-100 focus:font-medium focus:outline-1 focus:outline-white transition-all duration-300'}`}>
-
-          {(activeIndex === index) && <div className='w-[6px] h-[6px] bg-white rotate-45'></div>}
-          <button type='button' className='uppercase' onClick={() => handleNavigationClick(index)}>
+          : 'opacity-50 hover:opacity-100 focus:opacity-100 focus:font-medium focus:outline-1 focus:outline-white transition-all duration-300'}`} 
+          onClick={() => handleNavigationClick(index)}>
             {el}
           </button>
-
-        </li>
-      ))}
+        </li>))}
     </ul>
   )
 }
 
-export default SliderNavigation
+export default SliderNavigation;
