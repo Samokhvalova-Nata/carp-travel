@@ -19,6 +19,7 @@ const config: Config = {
       inputBgd: 'rgba(255, 255, 255, 0.05)',
       inputBgdFilled: 'rgba(255, 255, 255, 0.1)',
       burgerBgd: 'rgba(1, 10, 5, 0.75)',
+      transparent: 'transparent',
 
     },
     backgroundImage: {

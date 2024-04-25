@@ -17,7 +17,8 @@ const Career = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   return (
-    <section id="career" className='career section'>
+    <>
+    <section id="career" className='career section bg-top'>
       <div className='container'>
         <div className='md:flex items-center justify-between'>
           <Title text1={title.career1} text2={title.career2}/>
@@ -26,9 +27,17 @@ const Career = () => {
           </div>
         </div>
         <Features/>
-        <CareerForm/>
+        {!isMobile && <CareerForm/>}
       </div>
     </section>
+    {isMobile && (
+      <section className='career section bg-top'>
+        <div className='container'>
+          <CareerForm/>
+        </div>
+      </section>
+    )}
+    </>
   )
 }
 
