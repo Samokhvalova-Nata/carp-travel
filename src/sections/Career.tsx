@@ -26,16 +26,21 @@ const Career = () => {
             <Paragrath text={features.description}/>
           </div>
         </div>
-        <Features/>
-        {!isMobile && <CareerForm/>}
+        <div className='md:flex md:gap-[20px] lg:gap-[24px]'>
+          <Features/>
+          {!isMobile && <CareerForm/>}
+        </div>
+        
       </div>
     </section>
+
     {isMobile && (
       <section className='career section bg-top'>
         <div className='container'>
           <CareerForm/>
         </div>
       </section>
+
     )}
     </>
   )

@@ -30,7 +30,9 @@ export interface IInput {
   placeholder: string;
   error: string;
   ariaLabel: string;
-  pattern?: RegExp; 
+  pattern?: ValidationRule<RegExp>; 
+  minLength?:  ValidationRule<number>;
+  maxLength?:  ValidationRule<number>;
 }
 
 export interface ITextarea {
@@ -60,6 +62,19 @@ export interface IFormData {
     textarea: ITextarea;
     check: ICheck;
   };
+}
+
+export type InputOptions = {
+  required: boolean;
+  pattern?: ValidationRule<RegExp>;
+  minLength?: ValidationRule<number>;
+  maxLength?: ValidationRule<number>;
+};
+
+export interface InputProps {
+  input: IInput;
+  register: UseFormRegister<FormFields>;
+  errors: FieldErrors<FormFields>;
 }
 
 export interface TextAreaProps {

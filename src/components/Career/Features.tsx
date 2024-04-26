@@ -2,7 +2,7 @@ import { features } from '../../data/career';
 
 const Features = () => {
   return (
-    <div className='md:flex flex-col items-end lg:items-start'>
+    <div className='md:flex flex-col items-end lg:items-start lg:ml-[40px]'>
       <h3 className='my-[36px] pr-[39px] md:pr-0 md:mt-[12px] md:mb-[56px] lg:pl-[90px] lg:mt-[24px] lg:mb-[45px] text-30 lg:text-36 lg:leading-[1.8] uppercase text-right'>
         {features.subtitle}
       </h3>
@@ -19,3 +19,4 @@ const Features = () => {
 };
 
 export default Features;
+

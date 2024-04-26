@@ -40,7 +40,8 @@ export const formData: IFormData = {
         label: "Full name",
         placeholder: "John Smith",
         error: "Incorrect name",
-        ariaLabel: "Full name input"
+        ariaLabel: "Full name input",
+        pattern: /^[A-Za-zА-Яа-яЁё\s']+$/
       },
       {
         id: "career-email",
@@ -62,7 +63,7 @@ export const formData: IFormData = {
         required: true,
         label: "Position",
         placeholder: "Movie maker",
-        error: "Incorrect phone",
+        error: "Incorrect position",
         ariaLabel: "Position input"
       },
       {
@@ -72,10 +73,12 @@ export const formData: IFormData = {
         type: "tel",
         required: true,
         label: "Phone",
-        placeholder: "+ 38 (097) 12 34 567",
-        error: "",
+        placeholder: " (097) 12 34 567",
+        error: "Incorrect phone",
         ariaLabel: "Phone number input",
-        pattern: /^\+?3?8?(0\d{9})$/ 
+        pattern: /^[0-9\s()]+$/,
+        minLength: 10,
+        maxLength: 10,
       }
     ],
     textarea: {

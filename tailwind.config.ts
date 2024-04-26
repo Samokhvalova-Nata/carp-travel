@@ -49,6 +49,7 @@ const config: Config = {
         '22': '22px',
         '28': '28px',
         '30': '30px',
+        '32': '32px',
         '36': '36px',
       },
       letterSpacing: {

@@ -112,13 +112,13 @@ a {
 }
 
 .error::before {
-  content: url(../../public/icons/error-cross.svg);
-  color: var(--error-color);
+  content: url('../../public/icons/error-cross.svg');
+  fill: var(--error-color);
   position: absolute;
   width: 18px;
   height: 18px;
   left: -22px;
-  top: 50%;
+  top: 3px;
 }
 
 .btn::after {
@@ -251,8 +251,58 @@ a {
   .services-slider .swiper-wrapper {
     width: 607px !important;
   }
-
 }
+
+.phone-input input {
+  padding-left: 36px;
+}
+
+.phone-input::after {
+  content: "+38";
+  width: 36px;
+  color: var(--main-color);
+  font-size: 13px;
+  font-weight: 200;
+  line-height: 1.84;
+  position: absolute;
+  bottom: 2px;
+  left: 8px;
+}
+
+  @media screen and (min-width: 768px) {
+    .phone-input::after {
+      bottom: 1px;
+    }
+
+  } 
+
+  @media screen and (min-width: 1280px) {
+    .phone-input::after {
+      bottom: 6px;
+    }
+  }
+
+.check-label::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  opacity: 0.1;
+  flex-shrink: 0;
+  background-color: var(--main-color);
+  position: relative;
+  top: 3px;
+  left: 3px;
+  transition: opacity var(--transition);
+}
+
+.check-input:checked + .check-label::before {
+  opacity: 1;
+}
+
+.check-input:hover + .check-label::before {
+  opacity: 1;
+}
+
 
 @layer utilities {
   .section {
