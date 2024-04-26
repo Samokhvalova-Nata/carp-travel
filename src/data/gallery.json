@@ -1,0 +1,32 @@
+[
+  {
+    "id": "01",
+    "img": "/images/gallery/elements/gallery-01-desktop-1x.png",
+    "alt": "Breathtaking view high Carpathian mountains"
+  },
+  {
+    "id": "02",
+    "img": "/images/gallery/elements/gallery-02-desktop-1x.png",
+    "alt": "Carpathian mountain's lake view"
+  },
+  {
+    "id": "03",
+    "img": "/images/gallery/elements/gallery-03-desktop-1x.png",
+    "alt": "House in Carpathian mountain"
+  },
+  {
+    "id": "04",
+    "img": "/images/gallery/elements/gallery-01-desktop-1x.png",
+    "alt": "Breathtaking view high Carpathian mountains"
+  },
+  {
+    "id": "05",
+    "img": "/images/gallery/elements/gallery-02-desktop-1x.png",
+    "alt": "Carpathian mountain's lake view"
+  },
+  {
+    "id": "06",
+    "img": "/images/gallery/elements/gallery-03-desktop-1x.png",
+    "alt": "House in Carpathian mountain"
+  }
+]

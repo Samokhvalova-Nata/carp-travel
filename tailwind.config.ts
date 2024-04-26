@@ -20,6 +20,7 @@ const config: Config = {
       inputBgdFilled: 'rgba(255, 255, 255, 0.1)',
       burgerBgd: 'rgba(1, 10, 5, 0.75)',
       transparent: 'transparent',
+      galleryNotActive: 'rgba(2, 15, 8, 0.75)',
 
     },
     backgroundImage: {
@@ -50,6 +51,7 @@ const config: Config = {
         '28': '28px',
         '30': '30px',
         '32': '32px',
+        '33': '33px',
         '36': '36px',
       },
       letterSpacing: {

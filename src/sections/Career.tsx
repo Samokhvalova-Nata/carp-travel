@@ -12,7 +12,6 @@ import Features from '@/components/Career/Features';
 import CareerForm from '@/components/Career/CareerForm';
 
 
-
 const Career = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
 

@@ -5,7 +5,7 @@ export interface TitleProps {
 
 const Title = ({text1, text2}: TitleProps) => {
   return (
-      <h2 className="text-justify font-thin uppercase text-[40px] md:text-[67px] lg:text-[98px] tracking-1.6 md:tracking-2.68 lg:tracking-3.92 leading-[1.4]">
+      <h2 className="font-thin uppercase text-[40px] md:text-[67px] lg:text-[98px] tracking-1.6 md:tracking-2.68 lg:tracking-3.92 leading-[1.4]">
         {text1}
         <span className="font-medium"> {text2}</span>
       </h2>
