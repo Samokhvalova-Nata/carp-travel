@@ -16,10 +16,12 @@ import { FormFields } from '@/types/formTypes';
 
 const CareerForm = () => {
   const { register, handleSubmit, watch, reset, setValue, formState: { errors }} = useForm<FormFields>();
+  
+  // TODO
   useFormPersist("career", {
     watch,
     setValue,
-    storage: window.localStorage,
+    // storage: window.localStorage,
   });
 
   const { description, forma: { inputs, textarea, check }} = formData;

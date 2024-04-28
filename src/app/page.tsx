@@ -8,12 +8,11 @@ import Services from "@/sections/Services";
 export default function Home() {
   return (
     <main>
-      {/* <Hero/>
+      <Hero/>
       <About/>
       <Services/>
-      
-      <Gallery/> */}
       <Career/>
+      <Gallery/>
       <Contacts/>
     </main>
   );

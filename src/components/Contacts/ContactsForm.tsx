@@ -2,7 +2,7 @@
 
 import { contactsFormData } from '@/data/contacts';
 import { FormFields } from '@/types/formTypes';
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useForm, SubmitHandler } from "react-hook-form";
 import useFormPersist from 'react-hook-form-persist';
 import Input from '../ui-kit/Input';
@@ -16,7 +16,7 @@ function ContactsForm() {
   useFormPersist("contacts", {
     watch,
     setValue,
-    storage: window.localStorage,
+    // storage: window.localStorage,
   });
 
   const {  forma: { inputs, textarea }} = contactsFormData;
@@ -26,6 +26,21 @@ function ContactsForm() {
     console.log(data);
     alert("Your data have been send");
   };
+// TODO
+  // const watchContactsForm = watch((data) => {
+  //   localStorage.setItem("contacts", JSON.stringify(data));
+  // });
+
+  useEffect(() => {
+    const storageData = localStorage.getItem("contacts");
+    if (storageData !== null) {
+      const result = JSON.parse(storageData);
+      setValue("name", result.name);
+      setValue("email", result.email);
+      setValue("message", result.message);
+    }
+  }, [setValue])
+  
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col md:mt-[64px]'>
