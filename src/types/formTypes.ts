@@ -64,6 +64,13 @@ export interface IFormData {
   };
 }
 
+export interface IContactsFormData {
+  forma: {
+    inputs: IInput[];
+    textarea: ITextarea;
+  };
+}
+
 export type InputOptions = {
   required: boolean;
   pattern?: ValidationRule<RegExp>;
