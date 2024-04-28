@@ -363,6 +363,14 @@ a {
   .section {
     @apply py-[56px] md:py-[64px] lg:py-[104px] max-w-full lg:max-w-[1600px] ml-auto mr-auto bg-no-repeat bg-cover bg-center
   }
+
+  .textarea {
+    @apply resize-none bg-inputBgd pl-[8px] py-[2px] text-13 lg:text-20 leading-[1.85] text-justify placeholder:text-13 placeholder:leading-[1.85] lg:placeholder:leading-[1.2] placeholder:opacity-20 hover:bg-inputBgdFilled focus:bg-inputBgdFilled transition-all duration-300 outline-none focus:outline-none
+  }
+
+  .input {
+    @apply bg-inputBgd pl-[8px] py-[2px] text-13 lg:text-20 leading-[1.85] text-justify placeholder:text-13 placeholder:leading-[1.85] lg:placeholder:leading-[1.2] placeholder:opacity-20 hover:bg-inputBgdFilled focus:bg-inputBgdFilled focus:placeholder:text-white focus:placeholder:opacity-100 transition-all duration-300 outline-none focus:outline-none
+  }
 }
 
 

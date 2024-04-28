@@ -11,8 +11,9 @@ export default function Home() {
       {/* <Hero/>
       <About/>
       <Services/>
-      <Career/>
+      
       <Gallery/> */}
+      <Career/>
       <Contacts/>
     </main>
   );

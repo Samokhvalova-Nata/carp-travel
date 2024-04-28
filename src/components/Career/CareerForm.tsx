@@ -10,28 +10,20 @@ import Input from '../ui-kit/Input';
 import TextArea from '../ui-kit/TextArea';
 import Check from '../ui-kit/Check';
 import FormButton from '../ui-kit/FormButton';
+import { FormFields } from '@/types/formTypes';
 
-export interface FormFields {
-  name: string;
-  email: string;
-  position?: string;
-  phone?: string;
-  message: string;
-  policy?: boolean;
-};
+
 
 const CareerForm = () => {
   const { register, handleSubmit, watch, reset, setValue, formState: { errors }} = useForm<FormFields>();
-  useFormPersist("careerFormData", {
+  useFormPersist("career", {
     watch,
     setValue,
-    // storage: window.localStorage,
+    storage: window.localStorage,
   });
 
   const { description, forma: { inputs, textarea, check }} = formData;
 
-  console.log('errors', errors)
-  
   const onSubmit = (data: FormFields) => {
     reset();
     console.log(data);
@@ -51,7 +43,8 @@ const CareerForm = () => {
           <Input key={input.id} input={input} register={register} errors={errors}/>
         ))}
         </div>
-        <TextArea textArea={textarea} register={register}/>
+        
+        <TextArea textArea={textarea} register={register} section="career"/>
         </div>
         
 

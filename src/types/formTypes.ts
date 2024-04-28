@@ -87,12 +87,23 @@ export interface InputProps {
 export interface TextAreaProps {
   textArea: ITextarea;
   register: UseFormRegister<FormFields>;
+  section: "career" | "contacts";
 }
 
 export interface CheckProps {
   check: ICheck;
   register: UseFormRegister<FormFields>;
 }
+
+export interface FormFields {
+  name: string;
+  email: string;
+  position?: string;
+  phone?: string;
+  message: string;
+  policy?: boolean;
+};
+
 
 
 

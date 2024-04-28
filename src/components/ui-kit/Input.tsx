@@ -16,7 +16,7 @@ const Input = ({input, register, errors}:InputProps) => {
 }
 
   return (
-    <div className={`flex flex-col relative mb-[16px] ${field === 'phone' && 'phone-input'}`}>
+    <div className={`flex flex-col w-full relative mb-[16px] ${field === 'phone' && 'phone-input'}`}>
       <label htmlFor={id} className={`mb-[4px] first-line:text-12 tracking-2.4 leading-[2] ${errors[field] ? 'text-error': 'text-white'}`}>
         {label}   
       </label>
@@ -26,7 +26,7 @@ const Input = ({input, register, errors}:InputProps) => {
         required={required} 
         aria-label={ariaLabel}
         placeholder={placeholder} 
-        className={`bg-inputBgd pl-[8px] py-[2px] text-13 lg:text-20 leading-[1.85] text-justify md:w-[222px] lg:w-full placeholder:text-13 placeholder:leading-[1.85] lg:placeholder:leading-[1.2] placeholder:opacity-20 hover:bg-inputBgdFilled focus:bg-inputBgdFilled focus:placeholder:text-white focus:placeholder:opacity-100 transition-all duration-300 outline-none focus:outline-none  ${errors[field] ? 'text-error': 'text-white'} `}
+        className={`input md:w-[222px] lg:w-full ${errors[field] ? 'text-error': 'text-white'} `}
         {...register(field, options)}
         />
       
