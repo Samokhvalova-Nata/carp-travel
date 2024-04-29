@@ -21,7 +21,6 @@ const config: Config = {
       transparent: 'transparent',
       galleryNotActive: 'rgba(2, 15, 8, 0.75)',
       shadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'
-
     },
     fontFamily: {
       sans: ['var(--font-inter)'],
@@ -33,9 +32,6 @@ const config: Config = {
         sm: { min: '480px', max: '767px' },
         md: { min: '768px' },
         lg: { min: '1280px' },
-
-        smOnly: { max: "767.98px" },
-        mdOnly: { min: "768px", max: "1279.98px" },
       },
       fontSize: {
         '12': '12px',
@@ -76,4 +72,5 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;

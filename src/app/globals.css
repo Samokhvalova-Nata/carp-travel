@@ -89,7 +89,7 @@ a {
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 @media screen and (min-width: 480px) {
@@ -114,7 +114,6 @@ a {
   }
 }
 
-
 /* -------------------HeroButton----------------- */
 .btn::after {
   content: url('../../public/icons/frame-right-mobile.svg');
@@ -132,30 +131,30 @@ a {
 
 @media screen and (min-width: 768px) {
   .btn::after {
-  content: url('../../public/icons/frame-right-tablet.svg');
-  top: 1px;
-  right: 0;
-}
+    content: url('../../public/icons/frame-right-tablet.svg');
+    top: 1px;
+    right: 0;
+  }
 
-.btn::before {
-  content: url('../../public/icons/frame-left-tablet.svg');
-  top: 1px;
-  left: 0;
-}
+  .btn::before {
+    content: url('../../public/icons/frame-left-tablet.svg');
+    top: 1px;
+    left: 0;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .btn::after {
-  content: url('../../public/icons/frame-right-desktop.svg');
-  top: -1px;
-  right: 0;
-}
+    content: url('../../public/icons/frame-right-desktop.svg');
+    top: -1px;
+    right: 0;
+  }
 
-.btn::before {
-  content: url('../../public/icons/frame-left-desktop.svg');
-  top: -1px;
-  left: 0;
-}
+  .btn::before {
+    content: url('../../public/icons/frame-left-desktop.svg');
+    top: -1px;
+    left: 0;
+  }
 }
 
 /* -------------------Backgrounds----------------- */
@@ -165,8 +164,8 @@ a {
   margin-right: auto;
 
   background-image: image-set(
-    url("/images/hero/hero-mobile-1x.png") 1x,
-    url("/images/hero/hero-mobile-2x.png") 2x
+    url('/images/hero/hero-mobile-1x.png') 1x,
+    url('/images/hero/hero-mobile-2x.png') 2x
   );
   background-repeat: no-repeat;
   background-size: cover;
@@ -174,15 +173,15 @@ a {
 
   @media screen and (min-width: 480px) {
     background-image: image-set(
-    url("/images/hero/hero-tablet-1x.png") 1x,
-    url("/images/hero/hero-tablet-2x.png") 2x
+      url('/images/hero/hero-tablet-1x.png') 1x,
+      url('/images/hero/hero-tablet-2x.png') 2x
     );
   }
 
   @media screen and (min-width: 768px) {
     background-image: image-set(
-    url("/images/hero/hero-desktop-1x.png") 1x,
-    url("/images/hero/hero-desktop-2x.png") 2x
+      url('/images/hero/hero-desktop-1x.png') 1x,
+      url('/images/hero/hero-desktop-2x.png') 2x
     );
   }
 
@@ -193,84 +192,84 @@ a {
 
 .about {
   background-image: image-set(
-    url("/images/about/about-mobile-1x.png") 1x,
-    url("/images/about/about-mobile-2x.png") 2x
+    url('/images/about/about-mobile-1x.png') 1x,
+    url('/images/about/about-mobile-2x.png') 2x
   );
 
   @media screen and (min-width: 768px) {
     background-image: image-set(
-    url("/images/about/about-tablet-1x.png") 1x,
-    url("/images/about/about-tablet-2x.png") 2x
+      url('/images/about/about-tablet-1x.png') 1x,
+      url('/images/about/about-tablet-2x.png') 2x
     );
   }
 
   @media screen and (min-width: 1280px) {
     background-image: image-set(
-    url("/images/about/about-desktop-1x.png") 1x,
-    url("/images/about/about-desktop-2x.png") 2x
+      url('/images/about/about-desktop-1x.png') 1x,
+      url('/images/about/about-desktop-2x.png') 2x
     );
   }
 }
 
 .career {
   background-image: image-set(
-    url("/images/career/career-mobile-1x.png") 1x,
-    url("/images/career/career-mobile-2x.png") 2x
+    url('/images/career/career-mobile-1x.png') 1x,
+    url('/images/career/career-mobile-2x.png') 2x
   );
 
   @media screen and (min-width: 768px) {
     background-image: image-set(
-    url("/images/career/career-tablet-1x.png") 1x,
-    url("/images/career/career-tablet-2x.png") 2x
+      url('/images/career/career-tablet-1x.png') 1x,
+      url('/images/career/career-tablet-2x.png') 2x
     );
   }
 
   @media screen and (min-width: 1280px) {
     background-image: image-set(
-    url("/images/career/career-desktop-1x.png") 1x,
-    url("/images/career/career-desktop-2x.png") 2x
+      url('/images/career/career-desktop-1x.png') 1x,
+      url('/images/career/career-desktop-2x.png') 2x
     );
   }
 }
 
 .gallery {
   background-image: image-set(
-    url("/images/gallery/bg/gallery-bg-mobile-1x.png") 1x,
-    url("/images/gallery/bg/gallery-bg-mobile-2x.png") 2x
+    url('/images/gallery/bg/gallery-bg-mobile-1x.png') 1x,
+    url('/images/gallery/bg/gallery-bg-mobile-2x.png') 2x
   );
 
   @media screen and (min-width: 768px) {
     background-image: image-set(
-    url("/images/gallery/bg/gallery-bg-tablet-1x.png") 1x,
-    url("/images/gallery/bg/gallery-bg-tablet-2x.png") 2x
+      url('/images/gallery/bg/gallery-bg-tablet-1x.png') 1x,
+      url('/images/gallery/bg/gallery-bg-tablet-2x.png') 2x
     );
   }
 
   @media screen and (min-width: 1280px) {
     background-image: image-set(
-    url("/images/gallery/bg/gallery-bg-desktop-1x.png") 1x,
-    url("/images/gallery/bg/gallery-bg-desktop-2x.png") 2x
+      url('/images/gallery/bg/gallery-bg-desktop-1x.png') 1x,
+      url('/images/gallery/bg/gallery-bg-desktop-2x.png') 2x
     );
   }
 }
 
 .contacts {
   background-image: image-set(
-    url("/images/contacts/contacts-mobile-1x.png") 1x,
-    url("/images/contacts/contacts-mobile-2x.png") 2x
+    url('/images/contacts/contacts-mobile-1x.png') 1x,
+    url('/images/contacts/contacts-mobile-2x.png') 2x
   );
 
   @media screen and (min-width: 768px) {
     background-image: image-set(
-    url("/images/contacts/contacts-tablet-1x.png") 1x,
-    url("/images/contacts/contacts-tablet-2x.png") 2x
+      url('/images/contacts/contacts-tablet-1x.png') 1x,
+      url('/images/contacts/contacts-tablet-2x.png') 2x
     );
   }
 
   @media screen and (min-width: 1280px) {
     background-image: image-set(
-    url("/images/contacts/contacts-desktop-1x.png") 1x,
-    url("/images/contacts/contacts-desktop-2x.png") 2x
+      url('/images/contacts/contacts-desktop-1x.png') 1x,
+      url('/images/contacts/contacts-desktop-2x.png') 2x
     );
   }
 }
@@ -282,7 +281,7 @@ a {
 }
 
 .phone-input::after {
-  content: "+38";
+  content: '+38';
   width: 36px;
   color: var(--main-color);
   font-size: 13px;
@@ -293,25 +292,25 @@ a {
   left: 8px;
 }
 
-  @media screen and (min-width: 768px) {
-    .phone-input::after {
-      bottom: 1px;
-    }
-  } 
+@media screen and (min-width: 768px) {
+  .phone-input::after {
+    bottom: 1px;
+  }
+}
 
-  @media screen and (min-width: 1280px) {
-    .phone-input input {
-      padding-left: 46px;
-    }
-
-    .phone-input::after {
-      font-size: 20px;
-      bottom: 2px;
-    }
+@media screen and (min-width: 1280px) {
+  .phone-input input {
+    padding-left: 46px;
   }
 
+  .phone-input::after {
+    font-size: 20px;
+    bottom: 2px;
+  }
+}
+
 .check-label::before {
-  content: "";
+  content: '';
   width: 16px;
   height: 16px;
   opacity: 0.1;
@@ -347,17 +346,17 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .image-wrapper::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: var(--galleryNotActive);
-  box-shadow: var(--shadow);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
+  .image-wrap::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--galleryNotActive);
+    box-shadow: var(--shadow);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -386,21 +385,25 @@ a {
   }
 }
 
-
 /* -------------------Utilities----------------- */
 @layer utilities {
   .section {
-    @apply py-[56px] md:py-[64px] lg:py-[104px] max-w-full lg:max-w-[1600px] ml-auto mr-auto bg-no-repeat bg-cover bg-center
+    @apply ml-auto mr-auto max-w-full bg-cover bg-center bg-no-repeat py-[56px] md:py-[64px] lg:max-w-[1600px] lg:py-[104px];
   }
 
   .textarea {
-    @apply resize-none bg-inputBgd pl-[8px] py-[2px] text-13 lg:text-20 leading-[1.85] text-justify placeholder:text-13 placeholder:leading-[1.85] lg:placeholder:leading-[1.2] placeholder:opacity-20 hover:bg-inputBgdFilled focus:bg-inputBgdFilled transition-all duration-300 outline-none focus:outline-none
+    @apply resize-none bg-inputBgd py-[2px] pl-[8px] text-justify text-13 leading-[1.85] outline-none transition-all duration-300 placeholder:text-13 placeholder:leading-[1.85] placeholder:opacity-20 hover:bg-inputBgdFilled focus:bg-inputBgdFilled focus:outline-none lg:text-20 lg:placeholder:leading-[1.2];
   }
 
   .input {
-    @apply bg-inputBgd pl-[8px] py-[2px]  text-13 lg:text-20 leading-[1.85] text-justify placeholder:text-13 placeholder:leading-[1.85] lg:placeholder:text-20 lg:placeholder:leading-[1.2] placeholder:opacity-20 hover:bg-inputBgdFilled focus:bg-inputBgdFilled focus:placeholder:text-white focus:placeholder:opacity-100 transition-all duration-300 outline-none focus:outline-none
+    @apply bg-inputBgd py-[2px] pl-[8px]  text-justify text-13 leading-[1.85] outline-none transition-all duration-300 placeholder:text-13 placeholder:leading-[1.85] placeholder:opacity-20 hover:bg-inputBgdFilled focus:bg-inputBgdFilled focus:outline-none focus:placeholder:text-white focus:placeholder:opacity-100 lg:text-20 lg:placeholder:text-20 lg:placeholder:leading-[1.2];
+  }
+
+  .contact-link {
+    @apply font-normal leading-[1.72] transition-all duration-300 hover:underline focus:underline focus:outline-1 focus:outline-white md:text-16 md:leading-[1.5] lg:text-18 lg:leading-[1.33];
+  }
+
+  .contact-paragrath {
+    @apply text-12 leading-[1.67] lg:leading-[2];
   }
 }
-
-
-

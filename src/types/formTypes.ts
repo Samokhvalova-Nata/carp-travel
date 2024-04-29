@@ -1,7 +1,6 @@
-import { FieldErrors, UseFormRegister, ValidationRule } from "react-hook-form";
+import { FieldErrors, UseFormRegister, ValidationRule } from 'react-hook-form';
 
-
-type InputType = "text" | "email" | "tel";
+type InputType = 'text' | 'email' | 'tel';
 
 export interface IInput {
   id: string;
@@ -13,9 +12,9 @@ export interface IInput {
   placeholder: string;
   error: string;
   ariaLabel: string;
-  pattern?: ValidationRule<RegExp>; 
-  minLength?:  ValidationRule<number>;
-  maxLength?:  ValidationRule<number>;
+  pattern?: ValidationRule<RegExp>;
+  minLength?: ValidationRule<number>;
+  maxLength?: ValidationRule<number>;
 }
 
 export interface ITextarea {
@@ -24,7 +23,6 @@ export interface ITextarea {
   label: string;
   ariaLabel: string;
   field: fieldsOptions;
-
 }
 
 export interface ICheck {
@@ -50,42 +48,25 @@ export interface IFormData {
 export interface FormFields {
   name: string;
   email: string;
+  message: string;
   position?: string;
   phone?: string;
-  message: string;
   policy?: boolean;
-};
+}
 
 export type fieldsOptions =
-  | "name"
-  | "email"
-  | "position"
-  | "phone"
-  | "message"
-  | "policy";
+  | 'name'
+  | 'email'
+  | 'position'
+  | 'phone'
+  | 'message'
+  | 'policy';
 
-export type InputOptions = {
+export interface InputOptions {
   required: boolean;
   pattern?: ValidationRule<RegExp>;
   minLength?: ValidationRule<number>;
   maxLength?: ValidationRule<number>;
-}
-
-export interface InputProps {
-  input: IInput;
-  register: UseFormRegister<FormFields>;
-  errors: FieldErrors<FormFields>;
-}
-
-export interface TextAreaProps {
-  textArea: ITextarea;
-  register: UseFormRegister<FormFields>;
-  section: "career" | "contacts";
-}
-
-export interface CheckProps {
-  check: ICheck;
-  register: UseFormRegister<FormFields>;
 }
 
 export interface IContactsFormData {

@@ -1,52 +1,47 @@
-import React from 'react'
-import { contactsInfo } from '@/data/contacts';
+import React from 'react';
 
+import { contactsInfo } from '@/data/contacts';
 
 const ContactsInfo = () => {
   const { phone, email, socialMedia } = contactsInfo;
 
   return (
-    <address className='mt-[36px] flex flex-col gap-[24px] items-end w-full mb-[12px] 
-    md:flex-row md:items-baseline md:relative md:pl-[34px] md:gap-0
-    lg:flex-col lg:gap-16 not-italic'>
-
-    <div className='flex gap-[20px] items-baseline md:w-[50%] md:pl-[31px] lg:w-full'>
-      <ul className=''>
-          {phone.numbers.map((item) => (
-            <li key={item}>
-              <a 
-                href={`tel:${item}`}
+    <address className="mb-[12px] mt-[36px] flex w-full flex-col items-end gap-[24px] not-italic md:relative md:flex-row md:items-baseline md:gap-0 md:pl-[34px] lg:flex-col lg:gap-16">
+      <div className="flex items-baseline gap-[20px] md:w-[50%] md:pl-[31px] lg:w-full">
+        <ul>
+          {phone.items.map(({ number, ariaLabel }) => (
+            <li key={number}>
+              <a
+                href={`tel:${number}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className='font-normal leading-[1.72] md:text-16 md:leading-[1.5] lg:text-18 lg:leading-[1.33] hover:underline focus:underline focus:outline-1 focus:outline-white transition-all duration-300'>
-              {item}
+                aria-label={ariaLabel}
+                className="contact-link"
+              >
+                {number}
               </a>
-            </li>))}
-      </ul>
-      <p className='text-12 leading-[1.67] lg:leading-[2]'>
-        {phone.title}
-        </p>
-    </div>
+            </li>
+          ))}
+        </ul>
+        <p className="contact-paragrath">{phone.title}</p>
+      </div>
 
-    <div className='flex gap-[20px] items-baseline mr-[46px] 
-    md:order-1 md:w-[50%] md:absolute md:bottom-0 custom-left lg:order-none lg:static lg:w-full'>
-      <a 
-        href={`mailto:${email.email}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className='font-normal md:text-16 md:leading-[1.5] lg:text-18 lg:leading-[1.33] hover:underline focus:underline focus:outline-1 focus:outline-white transition-all duration-300'>
+      <div className="mr-[46px] flex items-baseline gap-[20px] md:absolute md:bottom-0 md:order-1 md:w-[50%] lg:static lg:order-none lg:w-full">
+        <a
+          href={`mailto:${email.email}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={email.ariaLabel}
+          className="contact-link"
+        >
           {email.email}
-      </a>
-      <p className='text-12 leading-[1.67] lg:leading-[2]'>
-        {email.title}
-      </p>
-    </div>
+        </a>
+        <p className="contact-paragrath">{email.title}</p>
+      </div>
 
-    <div className='flex gap-[20px] items-baseline mr-[15px] lg:flex-row-reverse lg:justify-end '>
-        <p className='text-12 leading-[1.67] lg:leading-[2]'>
-          {socialMedia.title}
-        </p>
-        <ul className='lg:ml-[115px] text-right'>
+      <div className="mr-[15px] flex items-baseline gap-[20px] lg:flex-row-reverse lg:justify-end">
+        <p className="contact-paragrath">{socialMedia.title}</p>
+        <ul className="text-right lg:ml-[115px]">
           {socialMedia.items.map(({ title, href, ariaLabel }) => (
             <li key={title}>
               <a
@@ -54,18 +49,16 @@ const ContactsInfo = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={ariaLabel}
-                className='font-normal leading-[1.72] md:text-16 md:leading-[1.5] lg:text-18 lg:leading-[1.33] hover:underline focus:underline focus:outline-1 focus:outline-white transition-all duration-300'>
+                className="contact-link"
+              >
                 {title}
               </a>
             </li>
-      ))}
+          ))}
         </ul>
-    </div>  
-
+      </div>
     </address>
-  )
-}
+  );
+};
 
-export default ContactsInfo
-
-// className='mt-[36px] mb-[12px] flex flex-col gap-[24px] items-end not-italic'
+export default ContactsInfo;

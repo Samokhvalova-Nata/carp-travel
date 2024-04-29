@@ -1,19 +1,19 @@
 import MenuButton from './MenuButton';
 import NavMenu from './NavMenu';
 
-export interface MobileMenuProps {
+interface MobileMenuProps {
   onClick: () => void;
 }
 
 const MobileMenu = ({ onClick }: MobileMenuProps) => {
   return (
-        <div className='fixed right-0 top-0 w-screen h-screen z-10 flex flex-col bg-burgerBgd backdrop-blur-25 py-[43px] px-[20px] gap-[110px] #data-menu'>
-          <div className='self-end'>
-            <MenuButton text="Close" onClick={onClick} />
-          </div>
-          <NavMenu onClick={onClick}/>
-        </div>
-  )
-}
+    <div className="fixed right-0 top-0 z-10 flex h-screen w-screen flex-col gap-[110px] bg-burgerBgd px-[20px] py-[43px] backdrop-blur-25">
+      <div className="self-end">
+        <MenuButton text="Close" onClick={onClick}/>
+      </div>
+      <NavMenu onClick={onClick}/>
+    </div>
+  );
+};
 
 export default MobileMenu;

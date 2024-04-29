@@ -1,18 +1,16 @@
-import React from 'react';
-
-export interface HeroButtonProps {
+interface HeroButtonProps {
   children: React.JSX.Element;
 }
 
-const HeroButton = ({ children}: HeroButtonProps) => {
+const HeroButton = ({ children }: HeroButtonProps) => {
   return (
     <button
       type="button"
-      className="btn w-full uppercase focus:outline-1 focus:outline-white bg-btnBgdLight md:bg-btnBgd h-[53px] lg:h-[71px] text-lg lg:text-[32px] font-bold leading-[2.66] md:leading-normal relative hover:bg-btnBgdHover focus:bg-btnBgdHover transition-all duration-300">
+      className="btn relative h-[53px] w-full bg-btnBgdLight text-lg font-bold uppercase leading-[2.66] transition-all duration-300 hover:bg-btnBgdHover focus:bg-btnBgdHover focus:outline-1 focus:outline-white md:bg-btnBgd md:leading-normal lg:h-[71px] lg:text-[32px]"
+    >
       {children}
     </button>
   );
 };
-
 
 export default HeroButton;

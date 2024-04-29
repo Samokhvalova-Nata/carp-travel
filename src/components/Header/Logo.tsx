@@ -1,24 +1,27 @@
-import Image from "next/image";
-import Link from "next/link";
-import logo from '../../../public/icons/logo.svg';
+import Image from 'next/image';
+import Link from 'next/link';
+
+import data from '@/data/logo.json';
 
 const Logo = () => {
+  const { src, text, alt } = data;
+
   return (
     <Link
       href="/"
       aria-label="logo"
-      className="flex flex-col font-mono font-normal tracking-2.59 text-white focus:outline-white focus:ootline-1 hover:scale-110 transition-transform duration-300"
+      className="focus:ootline-1 flex flex-col font-mono font-normal tracking-2.59 text-white transition-transform duration-300 hover:scale-110 focus:outline-white"
     >
       <Image
-        src={logo}
-        alt="travel company logo"
+        src={src}
+        alt={alt}
         width={59}
         height={21}
-        className="w-[59px] h-[21px] md:w-[61px] md:h-[22px]"
+        className="h-[21px] w-[59px] md:h-[22px] md:w-[61px]"
       />
-      CarpTravel
+      {text}
     </Link>
   );
-}
+};
 
 export default Logo;

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter, Karantina } from 'next/font/google';
+
 import { Toaster } from "react-hot-toast";
 
 import './globals.css';
@@ -67,8 +68,8 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${karantina.variable}`}>
       <body>
         {children}
-            <Toaster position="top-right" reverseOrder={false} />
+        <Toaster position="top-right" reverseOrder={false} />
       </body>
     </html>
   );
-}
+};
