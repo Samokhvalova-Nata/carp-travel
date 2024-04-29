@@ -2,7 +2,6 @@ import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
-  // blocklist: ['container'],
   theme: {
     colors: {
       transparent: 'transparent',
@@ -21,13 +20,8 @@ const config: Config = {
       burgerBgd: 'rgba(1, 10, 5, 0.75)',
       transparent: 'transparent',
       galleryNotActive: 'rgba(2, 15, 8, 0.75)',
+      shadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'
 
-    },
-    backgroundImage: {
-      gradSectionTop:
-        'linear-gradient(180deg, #001826 0%, rgba(0, 37, 49, 0) 100%)',
-      gradSectionBottom:
-        'linear-gradient(180deg, #002426 0%, rgba(0, 37, 49, 0) 100%)',
     },
     fontFamily: {
       sans: ['var(--font-inter)'],
@@ -39,6 +33,9 @@ const config: Config = {
         sm: { min: '480px', max: '767px' },
         md: { min: '768px' },
         lg: { min: '1280px' },
+
+        smOnly: { max: "767.98px" },
+        mdOnly: { min: "768px", max: "1279.98px" },
       },
       fontSize: {
         '12': '12px',
@@ -55,16 +52,16 @@ const config: Config = {
         '36': '36px',
       },
       letterSpacing: {
-        wide: '2.59px',
-        normal: '1.4px',
         '3.92': '-3.92px',
-        '1.4': '-0.14px',
+        '-1.4': '-0.14px',
         '0.32': '0.32px',
         '1.26': '1.26px',
+        '1.4': '1.4px',
         '1.44': '1.44px',
         '1.6': '-1.6px',
         '2.16': '2.16px',
         '2.4': '2.4px',
+        '2.59': '2.59px',
         '2.68': '-2.68px',
         '1.665': '1.665px',
         '8.71': '8.71px',
@@ -78,6 +75,5 @@ const config: Config = {
     },
   },
   plugins: [],
-  // prefix: 'tw-',
 };
 export default config;

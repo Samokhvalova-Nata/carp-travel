@@ -3,23 +3,6 @@ import { FieldErrors, UseFormRegister, ValidationRule } from "react-hook-form";
 
 type InputType = "text" | "email" | "tel";
 
-export interface FormFields {
-  name: string;
-  email: string;
-  position?: string;
-  phone?: string;
-  message: string;
-  policy?: boolean;
-};
-
-export type fieldsOptions =
-  | "name"
-  | "email"
-  | "position"
-  | "phone"
-  | "message"
-  | "policy";
-
 export interface IInput {
   id: string;
   field: fieldsOptions;
@@ -64,19 +47,29 @@ export interface IFormData {
   };
 }
 
-export interface IContactsFormData {
-  forma: {
-    inputs: IInput[];
-    textarea: ITextarea;
-  };
-}
+export interface FormFields {
+  name: string;
+  email: string;
+  position?: string;
+  phone?: string;
+  message: string;
+  policy?: boolean;
+};
+
+export type fieldsOptions =
+  | "name"
+  | "email"
+  | "position"
+  | "phone"
+  | "message"
+  | "policy";
 
 export type InputOptions = {
   required: boolean;
   pattern?: ValidationRule<RegExp>;
   minLength?: ValidationRule<number>;
   maxLength?: ValidationRule<number>;
-};
+}
 
 export interface InputProps {
   input: IInput;
@@ -95,15 +88,9 @@ export interface CheckProps {
   register: UseFormRegister<FormFields>;
 }
 
-export interface FormFields {
-  name: string;
-  email: string;
-  position?: string;
-  phone?: string;
-  message: string;
-  policy?: boolean;
-};
-
-
-
-
+export interface IContactsFormData {
+  forma: {
+    inputs: IInput[];
+    textarea: ITextarea;
+  };
+}

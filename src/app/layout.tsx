@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
 import { Inter, Karantina } from 'next/font/google';
+import { Toaster } from "react-hot-toast";
+
 import './globals.css';
+
 
 const baseUrl = process.env.VERCEL_URL as string;
 
@@ -62,7 +65,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${karantina.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+            <Toaster position="top-right" reverseOrder={false} />
+      </body>
     </html>
   );
 }

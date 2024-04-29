@@ -7,7 +7,7 @@ const Logo = () => {
     <Link
       href="/"
       aria-label="logo"
-      className="flex flex-col font-mono font-normal tracking-wide text-white focus:outline-white focus:ootline-1 hover:scale-110 transition-transform duration-300"
+      className="flex flex-col font-mono font-normal tracking-2.59 text-white focus:outline-white focus:ootline-1 hover:scale-110 transition-transform duration-300"
     >
       <Image
         src={logo}

@@ -15,6 +15,8 @@
     --input-filled-bgd: rgba(255, 255, 255, 0.1);
 
     --burgerBgd: rgba(1, 10, 5, 0.75);
+    --galleryNotActive: rgba(2, 15, 8, 0.75);
+    --shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
     --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -67,15 +69,6 @@ a {
   text-decoration: none;
 }
 
-.container {
-  max-width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  /* outline: 2px solid red; */
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -87,6 +80,16 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/* -------------------Container----------------- */
+.container {
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -111,16 +114,8 @@ a {
   }
 }
 
-.error::before {
-  content: url('../../public/icons/error-cross.svg');
-  fill: var(--error-color);
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  left: -22px;
-  top: 3px;
-}
 
+/* -------------------HeroButton----------------- */
 .btn::after {
   content: url('../../public/icons/frame-right-mobile.svg');
   position: absolute;
@@ -163,6 +158,7 @@ a {
 }
 }
 
+/* -------------------Backgrounds----------------- */
 .hero {
   max-width: 100%;
   margin-left: auto;
@@ -279,21 +275,7 @@ a {
   }
 }
 
-/* @media screen and (min-width: 768px) {
-  .services-slider .swiper-wrapper {
-    width: 463px !important;
-  }
-
-  .services-slider.swiper {
-    margin: 0 !important;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .services-slider .swiper-wrapper {
-    width: 607px !important;
-  }
-} */
+/* -------------------Form's items----------------- */
 
 .phone-input input {
   padding-left: 36px;
@@ -315,12 +297,16 @@ a {
     .phone-input::after {
       bottom: 1px;
     }
-
   } 
 
   @media screen and (min-width: 1280px) {
+    .phone-input input {
+      padding-left: 46px;
+    }
+
     .phone-input::after {
-      bottom: 6px;
+      font-size: 20px;
+      bottom: 2px;
     }
   }
 
@@ -345,20 +331,63 @@ a {
   opacity: 1;
 }
 
-.gallery-swiper .swiper-wrapper {
-  width: 100%;
-    align-items: center;
+.error::before {
+  content: url('../../public/icons/error-cross.svg');
+  fill: var(--error-color);
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: -22px;
+  top: 3px;
 }
 
-/* .swiper-slide {
-  width: 213px;
+/* -------------------Gallery----------------- */
+.swiper-wrapper {
   align-items: center;
+}
 
-} */
+@media screen and (min-width: 768px) {
+  .image-wrapper::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--galleryNotActive);
+  box-shadow: var(--shadow);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+}
+
+@media screen and (min-width: 768px) {
+  .swiper.gallery-swiper .swiper-slide.gallery-slider.swiper-slide-next,
+  .swiper.gallery-swiper .swiper-slide.gallery-slider.swiper-slide-prev {
+    width: 121px !important;
+    height: 87px !important;
+  }
+
+  .swiper.gallery-swiper .swiper-slide.gallery-slider.swiper-slide-active {
+    width: 415px !important;
+    height: 294px !important;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper.gallery-swiper .swiper-slide.gallery-slider.swiper-slide-next,
+  .swiper.gallery-swiper .swiper-slide.gallery-slider.swiper-slide-prev {
+    width: 213px !important;
+    height: 125px !important;
+  }
+
+  .swiper.gallery-swiper .swiper-slide.gallery-slider.swiper-slide-active {
+    width: 606px !important;
+    height: 429px !important;
+  }
+}
 
 
-
-
+/* -------------------Utilities----------------- */
 @layer utilities {
   .section {
     @apply py-[56px] md:py-[64px] lg:py-[104px] max-w-full lg:max-w-[1600px] ml-auto mr-auto bg-no-repeat bg-cover bg-center
@@ -369,7 +398,7 @@ a {
   }
 
   .input {
-    @apply bg-inputBgd pl-[8px] py-[2px] text-13 lg:text-20 leading-[1.85] text-justify placeholder:text-13 placeholder:leading-[1.85] lg:placeholder:leading-[1.2] placeholder:opacity-20 hover:bg-inputBgdFilled focus:bg-inputBgdFilled focus:placeholder:text-white focus:placeholder:opacity-100 transition-all duration-300 outline-none focus:outline-none
+    @apply bg-inputBgd pl-[8px] py-[2px]  text-13 lg:text-20 leading-[1.85] text-justify placeholder:text-13 placeholder:leading-[1.85] lg:placeholder:text-20 lg:placeholder:leading-[1.2] placeholder:opacity-20 hover:bg-inputBgdFilled focus:bg-inputBgdFilled focus:placeholder:text-white focus:placeholder:opacity-100 transition-all duration-300 outline-none focus:outline-none
   }
 }
 

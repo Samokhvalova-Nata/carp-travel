@@ -30,8 +30,8 @@ const HeroContent = () => {
           <Slogan />
         </div>
         <p className='text-justify leading-[1.42] md:text-base lg:text-lg md:leading-[1.25] lg:leading-[1.33] w-full md:w-[230px] lg:w-[294px] md:mt-[56px] md:mb-[28px] lg:mt-[181px]'>{data.description}</p>
-        <HeroButton text='JOIN NOW'>
-          <Link to="contacts" smooth={true} duration={500}/>
+        <HeroButton>
+          <Link to="contacts" smooth={true} duration={500} className='py-[12px] px-[50px]'>{'JOIN NOW'}</Link>
         </HeroButton>
       </div>
     </div>

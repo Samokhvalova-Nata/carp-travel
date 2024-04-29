@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 
 import Title from "@/components/ui-kit/Title";
@@ -13,7 +13,13 @@ import CareerForm from '@/components/Career/CareerForm';
 
 
 const Career = () => {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const [isMobile, setIsMobile] = useState(false);
+  const mobile = useMediaQuery({ maxWidth: 767 });
+
+  useEffect(() => {
+    setIsMobile(mobile);
+  }, [mobile]);
+
 
   return (
     <>

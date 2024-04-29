@@ -2,11 +2,11 @@ import { TextAreaProps } from '@/types/formTypes';
 
 
 
-const TextArea = ({textArea, register, section}:TextAreaProps) => {
-  const { id, field, label, ariaLabel} = textArea;
+const TextArea = ({ textArea, register, section }: TextAreaProps) => {
+  const { id, field, label, ariaLabel } = textArea;
 
   return (
-    <div className='flex flex-col mb-[16px] '>
+    <div className={`flex flex-col mb-[16px] ${section === 'contacts' ? '': 'lg:w-[50%]'} `}>
       <label htmlFor={id} className='mb-[4px] first-line:text-12 tracking-2.4 leading-[2]'>
         {label}
         </label>
