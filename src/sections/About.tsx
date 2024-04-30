@@ -25,7 +25,7 @@ const About = () => {
               <p className="font-normal uppercase leading-[1.42] md:text-16 md:leading-[1.25] lg:text-18 lg:leading-[1.33]">
                 {data.slogan2}
               </p>
-              <p className="leading-[1.42] tracking-1.4 md:text-16 md:leading-[1.25] md:tracking-0.32 lg:text-18 lg:leading-[1.33] lg:tracking-2.16">
+              <p className="leading-[1.42] tracking-[-0.14px] md:text-16 md:leading-[1.25] md:tracking-0.32 lg:text-18 lg:leading-[1.33] lg:tracking-2.16">
                 {data.slogan3}
               </p>
             </div>

@@ -20,7 +20,7 @@ const config: Config = {
       burgerBgd: 'rgba(1, 10, 5, 0.75)',
       transparent: 'transparent',
       galleryNotActive: 'rgba(2, 15, 8, 0.75)',
-      shadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'
+      shadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
     },
     fontFamily: {
       sans: ['var(--font-inter)'],
@@ -49,7 +49,6 @@ const config: Config = {
       },
       letterSpacing: {
         '3.92': '-3.92px',
-        '-1.4': '-0.14px',
         '0.32': '0.32px',
         '1.26': '1.26px',
         '1.4': '1.4px',
@@ -66,7 +65,7 @@ const config: Config = {
         '36.48': '36.48px',
       },
       backdropBlur: {
-        '25': '25px'
+        '25': '25px',
       },
     },
   },

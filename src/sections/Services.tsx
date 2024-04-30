@@ -87,7 +87,7 @@ const Services = () => {
                 activeIndex={activeIndex}
               />
             </div>
-            <div className="mt-[34px] text-justify md:mt-0 md:w-[221px] lg:ml-auto lg:w-[293px]">
+            <div className="mt-[34px] text-left md:text-justify md:mt-0 md:w-[221px] lg:ml-auto lg:w-[293px]">
               <Paragrath text={sliderDescription[activeIndex]} />
             </div>
           </div>

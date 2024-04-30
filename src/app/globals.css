@@ -274,8 +274,14 @@ a {
   }
 }
 
-/* -------------------Form's items----------------- */
+/* -------------------Services----------------- */
+@media screen and (min-width: 1280px) {
+  .services-slider {
+    width: 607px;
+  }
+}
 
+/* -------------------Form's items----------------- */
 .phone-input input {
   padding-left: 36px;
 }

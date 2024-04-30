@@ -6,7 +6,7 @@ const ContactsInfo = () => {
   const { phone, email, socialMedia } = contactsInfo;
 
   return (
-    <address className="mb-[12px] mt-[36px] flex w-full flex-col items-end gap-[24px] not-italic md:relative md:flex-row md:items-baseline md:gap-0 md:pl-[34px] lg:flex-col lg:gap-16">
+    <address className="mb-[12px] mt-[36px] flex w-full flex-col items-end gap-[24px] not-italic md:relative md:flex-row md:items-baseline md:gap-[60px] md:pl-[34px] lg:flex-col lg:gap-[64px]">
       <div className="flex items-baseline gap-[20px] md:w-[50%] md:pl-[31px] lg:w-full">
         <ul>
           {phone.items.map(({ number, ariaLabel }) => (
@@ -39,9 +39,9 @@ const ContactsInfo = () => {
         <p className="contact-paragrath">{email.title}</p>
       </div>
 
-      <div className="mr-[15px] flex items-baseline gap-[20px] lg:flex-row-reverse lg:justify-end">
+      <div className="mr-[15px] flex items-baseline gap-[20px] lg:mt-[60px] lg:flex-row-reverse lg:justify-end">
         <p className="contact-paragrath">{socialMedia.title}</p>
-        <ul className="text-right lg:ml-[115px]">
+        <ul className="lg:ml-[115px] lg:text-right">
           {socialMedia.items.map(({ title, href, ariaLabel }) => (
             <li key={title}>
               <a
