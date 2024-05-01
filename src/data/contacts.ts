@@ -5,11 +5,11 @@ export const contactsInfo = {
     title: 'Phone number',
     items: [
       {
-        number: '+38 (098) 12 34 567',
+        number: '+38(098)1234567',
         ariaLabel: 'Phone number +38(098)1234567',
       },
       {
-        number: '+38 (073) 12 34 567',
+        number: '+38(073)1234567',
         ariaLabel: 'Phone number +38(073)1234567',
       },
     ],

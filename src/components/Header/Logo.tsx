@@ -18,6 +18,7 @@ const Logo = () => {
         width={59}
         height={21}
         className="h-[21px] w-[59px] md:h-[22px] md:w-[61px]"
+        priority
       />
       {text}
     </Link>
