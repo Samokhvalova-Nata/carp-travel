@@ -287,6 +287,11 @@ a {
   }
 }
 
+.active-slider::before {
+  content: url('../../public/icons/dot.svg');
+  margin-right: 8px;
+}
+
 /* -------------------Form's items----------------- */
 .phone-input input {
   padding-left: 36px;

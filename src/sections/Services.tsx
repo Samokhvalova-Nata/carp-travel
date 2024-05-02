@@ -81,13 +81,16 @@ const Services = () => {
           </Swiper>
           <div className="md:flex md:flex-col md:justify-between lg:w-1/2">
             <div className="md:flex md:flex-col-reverse md:gap-[25px] lg:flex-row-reverse lg:justify-between">
-              <SliderSlogan text={sliderSlogan[activeIndex]} />
+              <SliderSlogan
+                text={sliderSlogan[activeIndex]}
+                activeIndex={activeIndex}
+              />
               <SliderNavigation
                 handleNavigationClick={handleNavigationClick}
                 activeIndex={activeIndex}
               />
             </div>
-            <div className="mt-[34px] text-left md:text-justify md:mt-0 md:w-[221px] lg:ml-auto lg:w-[293px]">
+            <div className="mt-[34px] text-left md:mt-0 md:w-[221px] md:text-justify lg:ml-auto lg:w-[293px]">
               <Paragrath text={sliderDescription[activeIndex]} />
             </div>
           </div>
