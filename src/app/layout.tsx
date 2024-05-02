@@ -6,7 +6,8 @@ import { Toaster } from "react-hot-toast";
 import './globals.css';
 
 
-const BASE_URL = process.env.VERCEL_URL as string;
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL as string;
+// console.log('BASE_URL', BASE_URL)
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
