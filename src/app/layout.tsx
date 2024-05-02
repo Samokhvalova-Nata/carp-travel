@@ -6,11 +6,11 @@ import { Toaster } from "react-hot-toast";
 import './globals.css';
 
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL as string;
+// const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL as string;
 // console.log('BASE_URL', BASE_URL)
 
 export const metadata: Metadata = {
-  metadataBase: new URL(BASE_URL),
+  metadataBase: new URL('https://carp-travel-delta.vercel.app/'),
   title: 'CarpTravel',
   description:
     "Discover the breathtaking beauty of the Carpathian Mountains with CarpTravel. From thrilling mountain expeditions to peaceful forest walks, we offer unforgettable tours in one of Europe's most stunning mountain ranges. Learn more and join us on the journey of a lifetime with CarpTravel.",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: 'CarpTravel',
     description:
       'Discover the breathtaking beauty of the Carpathian Mountains with CarpTravel. Learn more and join us on the journey of a lifetime with CarpTravel.',
-    url: `${BASE_URL}`,
+    url: 'https://carp-travel-delta.vercel.app/',
     siteName: 'CarpTravel',
     images: [
       {
