@@ -1,8 +1,5 @@
 'use client';
 
-import React from 'react';
-import { Link } from 'react-scroll';
-
 import HeroTitle from './HeroTitle';
 import Slogan from './Slogan';
 import HeroButton from '../ui-kit/HeroButton';
@@ -30,16 +27,7 @@ const HeroContent = () => {
         <p className="w-full text-justify leading-[1.42] md:mb-[28px] md:mt-[56px] md:w-[230px] md:text-base md:leading-[1.25] lg:mt-[181px] lg:w-[294px] lg:text-lg lg:leading-[1.33]">
           {data.description}
         </p>
-        <HeroButton>
-          <Link
-            to="contacts"
-            smooth={true}
-            duration={500}
-            className="px-[50px] py-[12px]"
-          >
-            {'JOIN NOW'}
-          </Link>
-        </HeroButton>
+        <HeroButton/>
       </div>
     </div>
   );
