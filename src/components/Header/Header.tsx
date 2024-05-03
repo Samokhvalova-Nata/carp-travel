@@ -26,16 +26,18 @@ const Header = () => {
   };
 
   return (
-    <header className="flex items-center justify-between pb-[36px] pt-[36px] md:pb-[66px] md:pt-[25px] lg:pb-[72px] lg:pt-[24px]">
-      <Logo />
-      {isMobile ? (
-        <>
-          <MenuButton text="Menu" onClick={toggleMenuOpen}/>
-          {isOpened && <MobileMenu onClick={toggleMenuOpen}/>}
-        </>
-      ) : (
-        <NavMenu/>
-      )}
+    <header className="absolute w-full pb-[36px] pt-[36px] md:pb-[66px] md:pt-[25px] lg:pb-[72px] lg:pt-[24px]">
+      <div className="container flex items-center justify-between">
+        <Logo />
+        {isMobile ? (
+          <>
+            <MenuButton text="Menu" onClick={toggleMenuOpen} />
+            {isOpened && <MobileMenu onClick={toggleMenuOpen} />}
+          </>
+        ) : (
+          <NavMenu />
+        )}
+      </div>
     </header>
   );
 };
