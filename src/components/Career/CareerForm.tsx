@@ -1,8 +1,7 @@
 'use client';
 
-import React, { useEffect } from 'react';
-
 import { useForm } from 'react-hook-form';
+import useFormPersist from 'react-hook-form-persist';
 import { toast } from 'react-hot-toast';
 
 import Paragrath from '../ui-kit/Paragrath';
@@ -20,7 +19,7 @@ const CareerForm = () => {
   const {
     register,
     handleSubmit,
-    reset,
+    reset, watch,
     setValue,
     formState: { errors },
   } = useForm<FormFields>();
@@ -30,20 +29,13 @@ const CareerForm = () => {
     forma: { inputs, textarea, check },
   } = formData;
 
-  useEffect(() => {
-    const storageData = localStorage.getItem('career');
-    if (storageData !== null) {
-      const result = JSON.parse(storageData);
-      setValue('name', result.name);
-      setValue('email', result.email);
-      setValue('position', result.position);
-      setValue('phone', result.phone);
-      setValue('message', result.message);
-    }
-  }, [setValue]);
+  useFormPersist('career', {
+    watch,
+    setValue,
+  });
+
 
   const onSubmit = (data: FormFields) => {
-    localStorage.setItem('career', JSON.stringify(data));
     reset();
     toast.success('Your data have been send. We will contact you soon');
   };

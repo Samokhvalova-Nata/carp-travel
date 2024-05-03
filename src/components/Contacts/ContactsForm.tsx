@@ -1,7 +1,5 @@
 'use client';
 
-import React, { useEffect } from 'react';
-
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-hot-toast';
 
@@ -11,12 +9,13 @@ import FormButton from '../ui-kit/FormButton';
 
 import { contactsFormData } from '@/data/contacts';
 import { FormFields } from '@/types/formTypes';
+import useFormPersist from 'react-hook-form-persist';
 
 function ContactsForm() {
   const {
     register,
     handleSubmit,
-    reset,
+    reset, watch,
     setValue,
     formState: { errors },
   } = useForm<FormFields>();
@@ -25,18 +24,12 @@ function ContactsForm() {
     forma: { inputs, textarea },
   } = contactsFormData;
 
-  useEffect(() => {
-    const storageData = localStorage.getItem('contacts');
-    if (storageData !== null) {
-      const result = JSON.parse(storageData);
-      setValue('name', result.name);
-      setValue('email', result.email);
-      setValue('message', result.message);
-    }
-  }, [setValue]);
+  useFormPersist('contacts', {
+    watch,
+    setValue,
+  });
 
   const onSubmit = (data: FormFields) => {
-    localStorage.setItem('contacts', JSON.stringify(data));
     reset();
     toast.success('Your data have been send. We will contact you soon');
   };

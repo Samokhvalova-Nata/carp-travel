@@ -5,7 +5,7 @@ import elements from '../../data/header.json';
 interface NavMenuProps {
   onClick?: () => void;
   isOpened?: boolean;
-};
+}
 
 const NavMenu = ({ onClick }: NavMenuProps) => {
   return (
@@ -16,7 +16,15 @@ const NavMenu = ({ onClick }: NavMenuProps) => {
             key={to}
             className="text-18 font-normal tracking-[1.8px] transition-all duration-300 hover:underline focus:underline focus:outline-1 focus:outline-white md:text-14 md:tracking-[1.4px]"
           >
-            <Link to={to} smooth={true} duration={500} onClick={onClick}>
+            <Link
+              to={to}
+              smooth={true}
+              duration={500}
+              onClick={onClick}
+              href="#"
+              ignoreCancelEvents={true}
+              className="transition-all duration-300 focus:outline-1 focus:outline-white"
+            >
               {children}
             </Link>
           </li>
