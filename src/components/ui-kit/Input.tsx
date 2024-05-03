@@ -19,7 +19,6 @@ const Input = ({ input, register, errors }: InputProps) => {
     error,
     label,
     pattern,
-    ariaLabel,
     minLength,
     maxLength,
   } = input;
@@ -45,7 +44,6 @@ const Input = ({ input, register, errors }: InputProps) => {
         id={id}
         type={type}
         required={required}
-        aria-label={ariaLabel}
         placeholder={placeholder}
         className={`input md:w-[222px] lg:w-full ${errors[field] ? 'text-error' : 'text-white'} `}
         {...register(field, options)}

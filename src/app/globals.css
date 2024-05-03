@@ -89,7 +89,7 @@ a {
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 @media screen and (min-width: 480px) {
@@ -163,7 +163,6 @@ a {
   }
 }
 
-
 /* -------------------Backgrounds----------------- */
 .hero {
   max-width: 100%;
@@ -191,13 +190,10 @@ a {
       url('/images/hero/hero-desktop-2x.png') 2x
     );
   }
-
-  @media screen and (min-width: 1280px) {
-    max-width: 1600px;
-  }
 }
 
 .about {
+  max-width: 100%;
   background-image: image-set(
     url('/images/about/about-mobile-1x.png') 1x,
     url('/images/about/about-mobile-2x.png') 2x
@@ -219,6 +215,7 @@ a {
 }
 
 .career {
+  max-width: 100%;
   background-image: image-set(
     url('/images/career/career-mobile-1x.png') 1x,
     url('/images/career/career-mobile-2x.png') 2x
@@ -240,6 +237,7 @@ a {
 }
 
 .gallery {
+  max-width: 100%;
   background-image: image-set(
     url('/images/gallery/bg/gallery-bg-mobile-1x.png') 1x,
     url('/images/gallery/bg/gallery-bg-mobile-2x.png') 2x
@@ -261,6 +259,7 @@ a {
 }
 
 .contacts {
+  max-width: 100%;
   background-image: image-set(
     url('/images/contacts/contacts-mobile-1x.png') 1x,
     url('/images/contacts/contacts-mobile-2x.png') 2x
@@ -406,7 +405,7 @@ a {
 /* -------------------Utilities----------------- */
 @layer utilities {
   .section {
-    @apply ml-auto mr-auto max-w-full bg-cover bg-center bg-no-repeat py-[56px] md:py-[64px] lg:max-w-[1600px] lg:py-[104px];
+    @apply ml-auto mr-auto max-w-full bg-cover bg-center bg-no-repeat py-[56px] md:py-[64px]  lg:py-[104px];
   }
 
   .textarea {

@@ -15,7 +15,7 @@ const SliderNavigation = ({
         <li
           key={el}
           className={`flex items-center 
-        ${activeIndex === index ? 'active-slider' : ''}
+          ${activeIndex === index ? 'active-slider' : ''}
         `}
         >
           <button

@@ -10,7 +10,7 @@ interface TextAreaProps {
 };
 
 const TextArea = ({ textArea, register, section }: TextAreaProps) => {
-  const { id, field, label, ariaLabel } = textArea;
+  const { id, field, label } = textArea;
 
   return (
     <div
@@ -24,7 +24,6 @@ const TextArea = ({ textArea, register, section }: TextAreaProps) => {
       </label>
       <textarea
         id={id}
-        aria-label={ariaLabel}
         className={`textarea 
           ${
             section === 'contacts'

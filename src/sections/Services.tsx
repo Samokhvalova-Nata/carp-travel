@@ -18,6 +18,7 @@ import Paragrath from '@/components/ui-kit/Paragrath';
 
 import title from '@/data/titles.json';
 import { sliderCards, sliderSlogan, sliderDescription } from '../data/services';
+import Image from 'next/image';
 
 const Services = () => {
   const [device, setDevice] = useState('mobile');
@@ -50,14 +51,15 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="section"
-      style={{
-        backgroundImage: `image-set(
-          url("/images/services/bg/services-bg-${activeIndex + 1}-${device}-1x.png") 1x,
-          url("/images/services/bg/services-bg-${activeIndex + 1}-${device}-2x.png") 2x)`,
-      }}
+      className="section relative h-[851px] md:h-[621px] lg:h-[826px]"
     >
-      <div className="container">
+      <Image
+        alt="Views of Carpatian"
+        src={`/images/services/bg/services-bg-${activeIndex + 1}-${device}-1x.png`}
+        fill
+        className=" object-cover"
+      />
+      <div className="container absolute left-[50%] top-[50%] z-10 translate-x-[-50%] translate-y-[-50%]">
         <div className="items-center md:flex md:gap-[170px] lg:gap-[162px]">
           <Title text1={title.services1} text2={title.services2} />
           <SlideCounter index={activeIndex + 1} />
